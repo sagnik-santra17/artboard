@@ -6,22 +6,38 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: teal;
+  gap: 30px;
+  min-height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(20, 12px);
-  grid-template-rows: repeat(20, 12px);
+  /* grid-template-columns: repeat(20, 12px);
+  grid-template-rows: repeat(20, 12px); */
   gap: 1px;
-  height: 250px;
-  width: 250px;
 }
 
 .box {
   background-color: white;
   border: 1px solid white;
+}
+
+.btn {
+  border: 1px solid steelblue;
+  border-radius: 20px;
+  color: white;
+  background-color: steelblue;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.btn:hover {
+  background-color: black;
+  transform: scale(1.05);
 }
